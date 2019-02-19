@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		
+	<% 
+	String s="Este mensaje no es muy dinámico";
+	out.println(s);
+	%>
+	
+	<p>Este mensaje no es muy dinámico</p>
+	
+	<% out.println("Este mensaje es dinámico: \n"+request.getHeader("USER-AGENT")); %>
+	
+</body>
+</html>
